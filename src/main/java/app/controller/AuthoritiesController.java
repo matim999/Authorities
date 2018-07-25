@@ -34,6 +34,7 @@ public class AuthoritiesController {
     private @ResponseBody
     ResponseEntity<RolesList> getAuthorities(@PathVariable int id){
         RolesList rolesList = new RolesList(pairRoleeDtoBaseConverter.convertAll(pairRepository.findAllByStaffId(id)));
+        System.out.println("OK");
         return new ResponseEntity<>(rolesList, HttpStatus.OK);
     }
 }
