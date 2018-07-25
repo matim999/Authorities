@@ -9,5 +9,8 @@
         <module name="Authorities" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Authorities" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
